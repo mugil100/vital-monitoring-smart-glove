@@ -1,0 +1,128 @@
+/* Body and background */
+body {
+  margin: 0;
+  background-image:url("../image.jpg");
+  background-size: cover;         /* Make it cover entire screen */
+  background-position: center;    /* Center the image */
+  background-repeat: no-repeat;   /* Prevent tiling */
+  background-attachment: fixed; 
+  font-family: Arial, sans-serif;
+  background-color: #1f2937; /* dark basecamp color */
+  color: white;
+}
+
+/* Login page */
+.login-container {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-box {
+  background-color: black;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  width: 300px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #10b981;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-box button:hover {
+  background-color: #059669;
+}
+
+/* Dashboard layout */
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background-color: #111827;
+  min-height: 100vh;
+}
+
+/* Soldier Card */
+.soldier-card {
+  background-color: #2d3748;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+
+.soldier-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.alert {
+  color: #ef4444; /* red for alerts */
+  font-weight: bold;
+}
+
+.ok {
+  color: #10b981; /* green for safe */
+}
+
+/* Chart container */
+.chart-container {
+  height: 150px;
+  margin-top: 15px;
+}
+
+/* Map container */
+.map-container {
+  height: 150px;
+  margin-top: 15px;
+}
+/* Highlight critical soldier card */
+.soldier-card.critical {
+  border: 2px solid #ef4444;
+  box-shadow: 0 0 15px #ef4444;
+  background-color: #3b3f46; /* slightly brighter to stand out */
+  transition: all 0.3s ease;
+}
+.notification-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111827;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  z-index: 1000;
+  border-bottom: 2px solid #10b981;
+}
+
+.notification-panel .critical-soldier {
+  background-color: #ef4444;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  white-space: nowrap;
+}
