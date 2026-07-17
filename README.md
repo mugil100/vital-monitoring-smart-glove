@@ -11,6 +11,10 @@ An IoT-based wearable device designed to monitor real-time health vitals (such a
 * **Web Dashboard:** Responsive frontend built with React and Vite to view data analytics and live streams.
 * **Backend Support:** Node.js backend to handle data storage, user authentication, and API requests.
 
+
+## Screenshots:
+<img width="1920" height="1080" alt="Screenshot 2026-03-10 153317" src="https://github.com/user-attachments/assets/717f4561-bfd2-4f42-8e58-74e008723ba4" />
+
 ---
 
 ## 🛠️ Tech Stack
